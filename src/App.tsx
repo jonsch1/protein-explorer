@@ -37,7 +37,11 @@ import { Search, ExternalLink, ChevronDown, Loader2 } from "lucide-react";
 
 const MySpec: PluginUISpec = {
   ...DefaultPluginUISpec(),
-  config: [[PluginConfig.VolumeStreaming.Enabled, false]],
+  config: [
+    [PluginConfig.VolumeStreaming.Enabled, false],
+    [PluginConfig.Viewport.ShowControls, false],
+    [PluginConfig.Viewport.ShowSelectionMode, false],
+  ],
   layout: {
     initial: {
       showControls: false,
@@ -103,7 +107,7 @@ function ProteinViewer({ dataUrl }: { dataUrl: string }) {
         width: "100%",
         height: "100%",
         position: "relative",
-        zIndex: 5,
+        zIndex: 1000,
       }}
     />
   );
