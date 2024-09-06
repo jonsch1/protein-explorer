@@ -34,14 +34,6 @@ import { PluginConfig } from "molstar/lib/mol-plugin/config";
 import symbolUniprotMapping from "@/lib/symbol_uniprot_mapping.txt";
 import "molstar/lib/mol-plugin-ui/skin/light.scss";
 import { Search, ExternalLink, ChevronDown, Loader2 } from "lucide-react";
-interface TabContent {
-  title: string;
-  content: string;
-}
-
-interface TabContentMap {
-  [key: string]: TabContent;
-}
 
 const MySpec: PluginUISpec = {
   ...DefaultPluginUISpec(),
