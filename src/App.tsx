@@ -281,7 +281,7 @@ export default function App() {
                 Protein Explorer
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Search for proteins by Gene Symbol or UniProt ID
+                Search for human proteins by Gene Symbol or UniProt ID
               </p>
               <div className="w-full max-w-md">
                 <Input
@@ -290,7 +290,7 @@ export default function App() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Enter Gene Symbol or UniProt ID"
+                  placeholder="For example enter: TP53 or P04637"
                   className="w-full mb-4"
                 />
                 <Button
@@ -334,7 +334,7 @@ export default function App() {
                       value={input}
                       onChange={(e) => setInput(e.target.value)}
                       onKeyDown={handleKeyDown}
-                      placeholder="Enter Gene Symbol or UniProt ID"
+                      placeholder="Enter Gene Symbol or UniProt ID - e.g. TP53 or P04637"
                       className="w-full"
                     />
                     <Button
