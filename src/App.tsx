@@ -107,7 +107,7 @@ function ProteinViewer({ dataUrl }: { dataUrl: string }) {
         width: "100%",
         height: "100%",
         position: "relative",
-        zIndex: 1000,
+        zIndex: 10,
       }}
     />
   );
@@ -326,7 +326,7 @@ export default function App() {
                     <Search className="text-indigo-600 h-8 w-8" />
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-80">
+                <PopoverContent className="w-80 z-2">
                   <div className="flex flex-col space-y-2">
                     <Input
                       ref={inputRef}
@@ -414,7 +414,7 @@ export default function App() {
                                         {summary.model_category}
                                       </CardDescription>
                                     </CardHeader>
-                                    <CardContent>
+                                    <CardContent className="z-1000">
                                       <p className="text-sm">
                                         Method: {summary.experimental_method}
                                       </p>
