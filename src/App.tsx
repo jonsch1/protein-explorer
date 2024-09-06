@@ -315,7 +315,7 @@ export default function App() {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-full mb-4 md:mb-0 md:absolute md:top-2 md:right-8 md:w-auto z-50"
+              className="w-full mb-4 md:mb-0 md:absolute md:top-2 md:right-8 md:w-auto z-5"
             >
               <Popover>
                 <PopoverTrigger asChild>
